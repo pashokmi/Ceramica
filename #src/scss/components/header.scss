@@ -1,4 +1,49 @@
+.header {
+  background-color: #eee2d7;
+  padding-bottom: 150px;
+  &__inner {
+    display: flex;
+  }
+  &__title {
+    font-family: Mak;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 120%;
+    max-width: 640px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    max-width: 470px;
+    line-height: 150%;
+    margin-bottom: 30px;
+  }
+  &__items {
+    position: relative;
+    
+  }
+  &__img--second {
+    max-width: 370px;
+    max-height: 370px;
+    width: 100%;
+  }
+  &__img--first {
+    border-radius: 133px 133px 0 0;
+    max-width: 270px;
+    max-height: 300px;
+    width: 100%;
+    position: absolute;
+    right: 300px;
+   top: 185px;
+    z-index: 1;
+  }
+}
+
 .menu {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
   &__btn {
     padding: 15px;
     display: none;
@@ -61,5 +106,31 @@
     @include media(992px) {
       display: none;
     }
+  }
+  &__item {
+    margin-right: 44px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    font-weight: 300;
+    color: #363131;
+  }
+  &__consultation {
+    color: #363131;
+    font-weight: 300;
+    padding: 14px 20px;
+    border: 0.7px solid #363131;
+    transition: background-color 0.5s, color 0.3s;
+    &:hover {
+      background-color: #be8b70;
+      color: $white;
+    }
+  }
+}
+.logo {
+  &__svg {
+    height: 34px;
   }
 }
