@@ -1,0 +1,65 @@
+.menu {
+  &__btn {
+    padding: 15px;
+    display: none;
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: 15px;
+    @include media(992px) {
+      display: block;
+    }
+  }
+  &__btn--active {
+    .menu__btn-style {
+      height: 0;
+      &::after {
+        top: 0;
+        left: 0;
+        transform: rotate(-45deg);
+      }
+      &::before {
+        top: 0px;
+        left: 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  &__btn-style {
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    background-color: $white;
+    color: $white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-in-out;
+    &::before,
+    &::after {
+      content: "";
+      height: 5px;
+      width: 50px;
+      background-color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &::before {
+      top: 20px;
+    }
+    &::after {
+      top: -15px;
+    }
+  }
+  &__list--hide {
+    display: flex;
+    @include media(992px) {
+      display: none;
+    }
+  }
+}
