@@ -61,7 +61,7 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-let slider_about = new Swiper('.about__slider', {
+let slider_about = new Swiper('.collection__inner', {
 	/*
 	effect: 'fade',
 	autoplay: {
@@ -71,15 +71,15 @@ let slider_about = new Swiper('.about__slider', {
 	*/
 	observer: true,
 	observeParents: true,
-	slidesPerView: 1,
+	slidesPerView: 4,
 	spaceBetween: 0,
 	autoHeight: true,
 	speed: 800,
 	//touchRatio: 0,
 	//simulateTouch: false,
-	//loop: true,
+	// loop: true,
 	//preloadImages: false,
-	//lazy: true,
+	lazy: true,
 	// Dotts
 	//pagination: {
 	//	el: '.slider-quality__pagging',

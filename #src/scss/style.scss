@@ -29,7 +29,7 @@ $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
-$white : #fff;
+$white: #fff;
 $mainColor: #363131;
 
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
@@ -41,10 +41,10 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 1.6;
-	color: $mainColor;
-	&._lock {
-		overflow: hidden;
-	}
+  color: $mainColor;
+  &._lock {
+    overflow: hidden;
+  }
 }
 
 .sr-only {
@@ -59,28 +59,36 @@ body {
   padding: 0 15px;
   max-width: 1200px;
 }
+.title {
+  font-family: Mak;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 50px;
+}
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
 //<ОБОЛОЧКА>===========================================================================================================
 .wrapper {
-	width: 100%;
-	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	&._loaded {
-	}
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &._loaded {
+  }
 }
 
-.button{
+.button {
   padding: 18px 29px;
   font-weight: 500;
   font-size: 18px;
   background-color: #be8b71;
   color: #f7f7f7;
   transition: color 0.3s ease-in;
-  &:hover{
-    color: #363131
+  &:hover {
+    color: #363131;
   }
 }
 //</ОБОЛОЧКА>===========================================================================================================
@@ -101,13 +109,16 @@ body {
 //@import "pagging";
 @import "popup";
 @import "components/header";
+@import "components/_utensils";
+@import "components/_showcase";
+@import "components/_collection";
 @import "components/footer";
 @import "home";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 //===================================================================================================================================
 

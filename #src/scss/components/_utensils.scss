@@ -1,0 +1,40 @@
+.utensils {
+  padding: 135px 0 40px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    max-width: 560px;
+    width: 100%;
+    padding-left: 60px;
+    margin-bottom: 30px;
+    position: relative;
+    &:nth-child(2n+1){
+      margin-right: 20px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 30px;
+      left: 0;
+      top: 10px;
+      background-size: cover;
+      background-position: left bottom;
+    }
+    &--cli-eco::after {
+      background-image: url("../img/icons/sprite.svg#cil_eco");
+    }&--fridge::after {
+      background-image: url("../img/icons/sprite.svg#fridge");
+    }&--eat::after {
+      background-image: url("../img/icons/sprite.svg#eat");
+    }&--cap::after {
+      background-image: url("../img/icons/sprite.svg#cap");
+    }&--fire::after {
+      background-image: url("../img/icons/sprite.svg#fire");
+    }&--family::after {
+      background-image: url("../img/icons/sprite.svg#family");
+    }
+  }
+}
