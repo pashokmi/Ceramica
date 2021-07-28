@@ -2009,6 +2009,7 @@ body.ie ._ibg img {
   padding: 5px;
   max-width: 280px;
   width: 100%;
+  height: 410px;
   margin-bottom: 30px;
 }
 
@@ -2100,6 +2101,93 @@ body.ie ._ibg img {
 .mixitup-control-active {
   opacity: 1;
   border-bottom: 1px solid #363131;
+}
+
+.about {
+  padding-top: 90px;
+  margin-bottom: 60px;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 500px;
+  width: 100%;
+  display: block;
+}
+
+.about__img--top {
+  margin-right: 60px;
+  border-radius: 260px 260px 0 0;
+}
+
+.about__inner {
+  max-width: 570px;
+  width: 100%;
+  z-index: 1;
+}
+
+.about__wrapper--top {
+  position: relative;
+  z-index: 1;
+}
+
+.about__wrapper--top::before {
+  position: absolute;
+  content: "";
+  width: 790px;
+  height: 950px;
+  top: -165px;
+  right: 525px;
+  background-image: url("../img/bg-3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.about__subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.sales {
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  padding: 100px 0 80px;
+}
+
+.sales__inner {
+  max-width: 730px;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 55px 30px 65px;
+}
+
+.sales__title {
+  margin-bottom: 15px;
+}
+
+.sales__text {
+  margin-bottom: 30px;
+  font-weight: 300;
 }
 
 .page {
