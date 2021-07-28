@@ -2009,14 +2009,15 @@ body.ie ._ibg img {
   padding: 5px;
   max-width: 280px;
   width: 100%;
+  margin-bottom: 30px;
+}
+
+.card:not(:last-child) {
+  margin-right: 15px;
 }
 
 .card--showcase:nth-child(2n) {
   padding-top: 65px;
-}
-
-.card:not(:last-child) {
-  margin-right: 20px;
 }
 
 .card__image {
@@ -2078,6 +2079,9 @@ body.ie ._ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 .collection__filters {

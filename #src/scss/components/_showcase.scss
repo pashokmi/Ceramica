@@ -10,13 +10,15 @@
   padding: 5px;
   max-width: 280px;
   width: 100%;
+  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
   &--showcase {
     &:nth-child(2n) {
       padding-top: 65px;
+
     }
-  }
-  &:not(:last-child) {
-    margin-right: 20px;
   }
   &__image {
     max-height: 300px;
