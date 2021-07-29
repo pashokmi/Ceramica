@@ -3,6 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
+    min-width: 0;
+    overflow: hidden;
   }
   &__filters{
     margin-bottom: 40px;

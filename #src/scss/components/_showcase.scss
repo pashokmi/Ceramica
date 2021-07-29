@@ -2,15 +2,17 @@
   padding: 85px 0;
   &__inner {
     display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+    overflow: hidden;
   }
 }
 
 .card {
-  display: block;
   padding: 5px;
   max-width: 280px;
   width: 100%;
-  height: 410px;
+  // height: 410px;
   margin-bottom: 30px;
   &:not(:last-child) {
     margin-right: 15px;
@@ -18,6 +20,8 @@
   &--showcase {
     &:nth-child(2n) {
       padding-top: 65px;
+    }&:nth-child(2n+1) {
+      padding-bottom: 65px;
     }
   }
   &__image {
