@@ -1,5 +1,8 @@
 .delivery{
   margin-bottom: 150px;
+  @include media(768px){
+    margin-bottom: 50px;
+  }
   &__img{
     max-width: 470px;
     width: 100%;

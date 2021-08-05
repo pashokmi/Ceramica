@@ -25,10 +25,10 @@
       flex-wrap: wrap;
     }
   }
-  &__content{
-     @include media(992px){
-       margin-bottom: 25px;
-     }
+  &__content {
+    @include media(992px) {
+      margin-bottom: 25px;
+    }
   }
   &__title {
     font-family: Mak;
@@ -85,6 +85,9 @@
   align-items: center;
   margin-bottom: 120px;
   z-index: 10;
+  @include media(992px) {
+    flex-wrap: wrap;
+  }
   &__btn {
     padding: 15px;
     display: none;
@@ -92,11 +95,12 @@
     border: none;
     background-color: transparent;
     position: relative;
-    z-index: 10;
+    z-index: 11;
     margin-left: auto;
     margin-right: 15px;
     @include media(992px) {
       display: block;
+      margin-bottom: 25px;
     }
   }
   &__btn--active {
@@ -118,8 +122,8 @@
     position: absolute;
     height: 5px;
     width: 50px;
-    background-color: $white;
-    color: $white;
+    background-color: #be8b71;
+    color: #be8b71;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -129,7 +133,7 @@
       content: "";
       height: 5px;
       width: 50px;
-      background-color: $white;
+      background-color: #be8b71;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -150,20 +154,39 @@
   }
   &__list {
     z-index: 10;
+    @include media(992px) {
+      position: absolute;
+      background-color: #eee2d7;
+      right: 0;
+      top: 0;
+      width: 300px;
+      padding-top: 15px;
+      border-left:2px solid #363131;
+      border-bottom:2px solid #363131;
+    }
   }
   &__item {
     margin-right: 44px;
     &:last-child {
       margin-right: 0;
     }
+     @include media(992px){
+       padding-left: 15px;
+       margin-bottom: 10px;
+     }
   }
   &__link {
     font-weight: 300;
     color: #363131;
     border-bottom: 1px solid transparent;
-    &:hover{
+    &:hover {
       border-bottom: 1px solid #363131;
       transition: border-bottom 0.5s;
+    }
+    @include media(992px){
+      font-weight: 700;
+      font-size: 18px;
+      padding: 5px;
     }
   }
   &__consultation {
@@ -173,6 +196,9 @@
     border: 0.7px solid #363131;
     transition: background-color 0.5s, color 0.3s;
     z-index: 2;
+    @include media(992px) {
+      width: 100%;
+    }
     &:hover {
       background-color: #be8b70;
       color: $white;

@@ -3,6 +3,9 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+     @include media(992px){
+        justify-content: center;
+      }
   }
   &__item {
     max-width: 560px;
@@ -12,6 +15,9 @@
     position: relative;
     &:nth-child(2n+1){
       margin-right: 20px;
+      @include media(768px){
+        margin-right: 0;
+      }
     }
     &::after {
       content: "";
