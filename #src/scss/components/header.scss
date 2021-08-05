@@ -209,5 +209,8 @@
   z-index: 10;
   &__svg {
     height: 34px;
+    @include media(992px){
+      height: 70px;
+    }
   }
 }
