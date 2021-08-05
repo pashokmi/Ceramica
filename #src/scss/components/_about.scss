@@ -5,12 +5,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include media(992px){
+      justify-content: center;
+    }
   }
   &__img {
     object-fit: cover;
     max-width: 500px;
     width: 100%;
     display: block;
+    @include media(992px){
+      margin-bottom: 20px;
+    }
   }
   &__img--top {
     margin-right: 60px;

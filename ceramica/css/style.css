@@ -2061,10 +2061,6 @@ body.ie ._ibg img {
           justify-content: center;
 }
 
-.card__name {
-  text-align: center;
-}
-
 .card__price {
   font-weight: 500;
   line-height: 20px;
@@ -2496,9 +2492,36 @@ body.ie ._ibg img {
             justify-content: center;
   }
 
+  .about__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .about__img {
+    margin-bottom: 20px;
+  }
+
   .offer__wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .offer__inner {
+    margin-bottom: 25px;
+  }
+
+  .delivery__img {
+    margin-bottom: 25px;
+  }
+
+  .delivery__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .footer__nav {
@@ -2534,6 +2557,10 @@ body.ie ._ibg img {
 
   .card__list {
     margin-bottom: 15px;
+  }
+
+  .card__name {
+    text-align: center;
   }
 
   .card__buy {

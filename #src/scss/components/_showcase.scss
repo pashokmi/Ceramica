@@ -59,7 +59,9 @@
     }
   }
   &__name {
-    text-align: center;
+    @include media(768px) {
+      text-align: center;
+    }
   }
   &__price {
     font-weight: 500;

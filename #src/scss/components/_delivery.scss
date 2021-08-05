@@ -6,11 +6,17 @@
     object-fit: cover;
     background-position: bottom center;
     margin-right: 20px;
+    @include media(992px){
+      margin-bottom: 25px;
+    }
   }
   &__wrapper{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @include media(992px){
+      justify-content: center;
+    }
   }
   &__inner{
     max-width: 570px;
