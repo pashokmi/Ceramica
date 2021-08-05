@@ -160,6 +160,11 @@
   &__link {
     font-weight: 300;
     color: #363131;
+    border-bottom: 1px solid transparent;
+    &:hover{
+      border-bottom: 1px solid #363131;
+      transition: border-bottom 0.5s;
+    }
   }
   &__consultation {
     color: #363131;
